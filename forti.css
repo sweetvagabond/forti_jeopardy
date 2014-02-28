@@ -1,0 +1,63 @@
+		body {
+			background: black;
+			margin: 0 auto;
+		}
+		.wrapper {
+			margin: 0 auto;
+			background-image:url('jeopardy_frame.png'); 
+			background-repeat: no-repeat;
+			position: relative;
+			font-family: sans-serif;
+			height: 800px;
+			text-align: center;
+			margin: 0 auto;
+		}
+		.points, .done, .category, .question {
+			display: inline-block;
+			color: gold;
+			text-shadow: 2px 2px black;
+			font-weight: thick;
+			background-image: -o-linear-gradient(top, #4634EB 0%, #05238C 100%);
+			background-image: -moz-linear-gradient(top, #4634EB 0%, #05238C 100%);
+			background-image: -webkit-linear-gradient(top, #4634EB 0%, #05238C 100%);
+			background-image: -ms-linear-gradient(top, #4634EB 0%, #05238C 100%);
+			background-image: linear-gradient(to top, #4634EB 0%, #05238C 100%);
+		}
+		.points, .done {
+			width: 200px;
+			height: 75px;
+			font-size: 5em;
+			padding: 15px 20px 25px 20px;
+			text-align: center;
+			margin: 10px;
+		}
+		.done {
+			color: transparent;
+			text-shadow: 2px 2px transparent;
+		}
+		.frame {
+			width: 900px;
+			margin: 0 auto;
+		}
+		.category {
+			width: 200px;
+			height: 30px;
+			vertical-align: top;
+			font-size: 2em;
+			padding: 20px;
+			text-align: center;
+			margin: 10px;
+		}
+		h1{
+			margin-bottom: 30px;
+		}
+		.question {
+			width: 800px;
+			height: 475px;
+			font-size: 4em;
+			text-align: center;
+			margin: 0 auto;
+		}
+		.long {
+			font-size: 3.5em;
+		}

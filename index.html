@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Fort - Jeopardy</title>
+  	<script  src="forti.js"></script>
+  	<link rel="stylesheet" type="text/css" href="forti.css">
+	<script>
+    $(document).ready(function() {
+    	$('.question').hide();
+        $('.points').click(function(){
+          $(this).next().fadeToggle();
+          $('.points').hide();
+          $('.done').hide();
+          $('.category').hide();
+        });
+        $('.question').click(function(){
+          $(this).toggle();
+          $(this).prev().attr('class', 'done');
+          $('.points').fadeIn();
+          $('.done').fadeIn();
+          $('.category').fadeIn();
+        });
+      });
+  </script>
+</head>
+<body>
+	<div class="wrapper">
+		<div class="frame">
+			<h1><img src="forti_jeopardy_logo.png" alt=""></h1>
+			<!-- categories -->
+				<div class="category">Presentation</div>
+					
+				<div class="category">Joe Sykora</div>
+					
+				<div class="category">Brochure</div>
+					
+			<!-- 100 point questions -->
+				<div class="points">100</div> <!-- Presentation -->
+					<div class="question">What other solutions does Fortinet offer besides teh FortiGate?</div>
+				<div class="points">100</div> <!-- Joe Sykora -->
+					<div class="question">Who is Joe Sykora?</div>
+				<div class="points">100</div>
+					<div class="question">What are the pillars of the Fortinet Advantage?</div> <!-- Brochure -->
+				
+			<!-- 200 point quesitons -->
+				<div class="points">200</div> <!-- Presentation -->
+					<div class="question">What are the core technologies included in the Fortinet FortiGate Unified Threat Management appliances?</div>
+				<div class="points">200</div> <!-- Joe Sykora -->
+					<div class="question">What is his title, and what does he do?</div>
+				<div class="points">200</div> <!-- Brochure -->
+					<div class="question long">Through constant innovation of in-house ________, hardware systems, netork software, management capabilities and security research we have consistantly outperformed the market.</div>
+				
+			<!-- 300 point quesions	 -->
+				<div class="points">300</div> <!-- Presentation -->
+					<div class="question">What are the top reasons you choose Fortinet over other network security vendors?</div>
+				<div class="points">300</div> <!-- Joe Sykora -->
+					<div class="question">What is Joe's #1 priority?</div>
+				<div class="points">300</div> <!-- Brochure -->
+					<div class="question">According to IDC worldwide Security Appliance Market Share 2013, Fortinet is the ___ largest Network Security Appliance vendor with how much yoy growth?</div>
+		</div>		
+	</div>	
+</body>
+</html>
